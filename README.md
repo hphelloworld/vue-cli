@@ -6,7 +6,7 @@
 
 1. [Vue](https://github.com/vuejs/vue)
 2. [Webpack](https://github.com/webpack/webpack)
-3. [Element](https://github.com/ElemeFE/element)
+3. [Element](https://github.com/dcloudio/mui)
 
 ## Start 开始
 
@@ -25,9 +25,9 @@ npm run dev
 
 ```
 
-[http://localhost:8010/user/login.html](http://localhost:8010/user/login.html)
+[http://localhost:8080/login.html](http://localhost:8080/login.html)
 
-[http://localhost:8010/user/index.html](http://localhost:8010/user/index.html)
+[http://localhost:8080/index.html](http://localhost:8080/index.html)
 
 ## Build 生产构建
 
@@ -37,7 +37,7 @@ npm run build
 node server.js
 ```
 
-[http://localhost:2333/user/login.html](http://localhost:2333/user/login.html)
+[http://localhost:8800/user/login.html](http://localhost:8800/login.html)
 
 ## Folder Structure 文件目录
 
@@ -45,22 +45,23 @@ node server.js
 ├── src             # 主目录
 │    ├── assets     # 资源目录
 │    │    ├── css   # css
-│    │    └── img   # 图片目录
+│    │    ├── fonts # fonts
+│    │    ├── img   # img
+│    │    └── js    # js
 │    ├── components # 自定义组件目录
 │    └── pages      # 页面目录
-│         └── user  # 业务模块目录
-│              ├── index  # index 页面
-│              │    ├── app.js    # 入口js
-│              │    ├── app.html  # html模板
-│              │    └── app.vue   # index 页面组件
-│              └── login  # login 页面
-│                   ├── app.js    # 入口js
-│                   ├── app.html  # html模板
-│                   └── app.vue   # login 页面组件
+│         ├── index  # index 页面
+│         │    ├── app.js    # 入口js
+│         │    ├── app.html  # html模板
+│         │    └── app.vue   # index 页面组件
+│         └── login  # login 页面
+│              ├── app.js    # 入口js
+│              ├── app.html  # html模板
+│              └── app.vue   # login 页面组件
 ├── dist            # npm run build生成的目录
 ├── node_modules    # dependencies
 ├── .babelrc        # babel文件
-├── server.js       # 用于查看npm run build的server.js，端口2333
+├── server.js       # 用于查看npm run build的server.js，端口8800
 ├── webpack.config.js # webpack配置目录
 ├── node_modules    # dependencies
 └── package.json    # package info
