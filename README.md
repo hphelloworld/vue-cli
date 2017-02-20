@@ -37,7 +37,7 @@ npm run build
 node server.js
 ```
 
-[http://localhost:8800/user/login.html](http://localhost:8800/login.html)
+[http://localhost:8800/login.html](http://localhost:8800/login.html)
 
 ## Folder Structure 文件目录
 
