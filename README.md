@@ -63,6 +63,5 @@ node server.js
 ├── .babelrc        # babel文件
 ├── server.js       # 用于查看npm run build的server.js，端口8800
 ├── webpack.config.js # webpack配置目录
-├── node_modules    # dependencies
 └── package.json    # package info
 ```
