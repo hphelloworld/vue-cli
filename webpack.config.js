@@ -22,7 +22,7 @@ let config = {
     },
     resolve: {
         //配置别名，在项目中可缩减引用路径
-        extensions: ['.js', '.vue'],
+        extensions: ['.js', '.vue', 'html'],
         alias: {
             assets: join(__dirname, '/src/assets'),
             components: join(__dirname, '/src/components'),
@@ -96,8 +96,7 @@ let config = {
                 }
             }
         },
-    },
-    devtool: '#eval-source-map'
+    }
 };
 
 const pages = getHtmls();
@@ -139,7 +138,7 @@ function getHtmls() {
 }
 
 if (process.env.NODE_ENV === 'production') {
-    module.exports.devtool = '#source-map';
+    // module.exports.devtool = '#source-map';
     // http://vue-loader.vuejs.org/en/workflow/production.html
     module.exports.plugins = (module.exports.plugins || []).concat([
         new webpack.DefinePlugin({

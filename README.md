@@ -1,4 +1,4 @@
-# vue-multiple-pages
+# vue-mui-multiple-pages
 
 >Vue2.0多页应用
 
@@ -6,7 +6,7 @@
 
 1. [Vue](https://github.com/vuejs/vue)
 2. [Webpack](https://github.com/webpack/webpack)
-3. [Element](https://github.com/dcloudio/mui)
+3. [Mui](https://github.com/dcloudio/mui)
 
 ## Start 开始
 

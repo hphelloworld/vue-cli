@@ -6,8 +6,8 @@ import '../../assets/css/mui.min.css'
 new Vue({
   el: '#app',
   mounted: function(){
-  	$("body").css('background','#eee');
-  	mui.toast('133');
+  	$("body").css('background','#fff');
+  	mui.toast('143');
   },
   render: h => h(App)
 })
