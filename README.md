@@ -50,14 +50,16 @@ node server.js
 │    │    └── js    # js
 │    ├── components # 自定义组件目录
 │    └── pages      # 页面目录
-│         ├── index  # index 页面
-│         │    ├── app.js    # 入口js
-│         │    ├── app.html  # html模板
-│         │    └── app.vue   # index 页面组件
-│         └── login  # login 页面
-│              ├── app.js    # 入口js
-│              ├── app.html  # html模板
-│              └── app.vue   # login 页面组件
+│    │     ├── index  # index 页面
+│    │     │    ├── app.js    # 入口js
+│    │     │    ├── app.html  # html模板
+│    │     │    └── app.vue   # index 页面组件
+│    │     └── login  # login 页面
+│    │          ├── app.js    # 入口js
+│    │          ├── app.html  # html模板
+│    │          └── app.vue   # login 页面组件
+│    ├── routes     # 路由目录
+│    ├── store      # 应用状态管理目录
 ├── dist            # npm run build生成的目录
 ├── node_modules    # dependencies
 ├── .babelrc        # babel文件
