@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<p>{{ message }}</p>
+		<img src="../../assets/img/logo.png" alt="">
 	</div>
 </template>
 <script>
