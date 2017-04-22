@@ -1,67 +1,29 @@
-# vue-mui-multiple-pages
+# vue-cli
 
->Vue2.0多页应用
+#### 基本使用方法
+  使用方法与vue官方的vue-cli基本是一样的，只是不过改了下配置变成了多页面应用的脚手架。
+  主要文件目录是src目录。
+  
+  1,assets为静态资源文件目录，里面存放公共的js,css,img等资源文件;
+  
+  2,js为入口文件目录，每一个单页面的入口js应该和pages下的html命名相同，比如user.js和user.html;
+  
+  3,modules为vue的组件目录，里面存放各个页面或者公共的组件;
+  
+  4,pages为各个页面的入口页面，命名规范与js目录一致;
+  
+  5,routet为各个页面的路由js存放目录，可以按需添加，命名建议保持一致。
+  
+  6,store为各个页面组件状态管理目录，可以按需添加，命名建议保持一致。
 
-## Links 依赖链接
+  页面访问：http://localhost:8080/pages/index.html
 
-1. [Vue](https://github.com/vuejs/vue)
-2. [Webpack](https://github.com/webpack/webpack)
-3. [Mui](https://github.com/dcloudio/mui)
+#### 基本构建命令
+  `npm install` 安装依赖模块（其他命令必须在运行完此命令后才能调用！）
 
-## Start 开始
+  `npm run dev` 开启测试环境，在测试环境下开发  
+  
+  `npm run build` 发布正式版本  
+  
+  
 
- - Clone or download this repository
- - Enter your local directory, and install dependencies:
-
-``` bash
-npm install
-```
-
-## Develop 开发构建
-
-``` bash
-# serve with hot reload at localhost:8080
-npm run dev
-
-```
-
-[http://localhost:8080/login.html](http://localhost:8080/login.html)
-
-[http://localhost:8080/index.html](http://localhost:8080/index.html)
-
-## Build 生产构建
-
-``` bash
-# build for production with minification
-npm run build
-node server.js
-```
-
-[http://localhost:8800/login.html](http://localhost:8800/login.html)
-
-## Folder Structure 文件目录
-
-```bash
-├── src             # 主目录
-│    ├── assets     # 资源目录
-│    │    ├── css   # css
-│    │    ├── fonts # fonts
-│    │    ├── img   # img
-│    │    └── js    # js
-│    ├── components # 自定义组件目录
-│    └── pages      # 页面目录
-│         ├── index  # index 页面
-│         │    ├── app.js    # 入口js
-│         │    ├── app.html  # html模板
-│         │    └── app.vue   # index 页面组件
-│         └── login  # login 页面
-│              ├── app.js    # 入口js
-│              ├── app.html  # html模板
-│              └── app.vue   # login 页面组件
-├── dist            # npm run build生成的目录
-├── node_modules    # dependencies
-├── .babelrc        # babel文件
-├── server.js       # 用于查看npm run build的server.js，端口8800
-├── webpack.config.js # webpack配置目录
-└── package.json    # package info
-```

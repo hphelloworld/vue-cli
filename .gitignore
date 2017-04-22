@@ -1,3 +1,14 @@
+<<<<<<< HEAD
 
 node_modules
 .vscode
+=======
+*~
+.DS_Store
+.idea
+.vscode
+node_modules/
+dist/
+npm-debug.log
+selenium-debug.log
+>>>>>>> ee12ccacc0a4583faf2371eedf265dafdc7ce9fa
