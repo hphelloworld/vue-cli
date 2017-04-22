@@ -6,7 +6,7 @@
   
   1,assets为静态资源文件目录，里面存放公共的js,css,img等资源文件;
   
-  2,js为入口文件目录，每一个单页面的入口js应该和pages下的html命名相同，比如user.js和user.html;
+  2,entry为入口文件的js目录，每一个单页面的入口js应该和pages下的html命名相同，比如user.js和user.html;
   
   3,modules为vue的组件目录，里面存放各个页面或者公共的组件;
   
